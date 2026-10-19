@@ -1,0 +1,22 @@
+{
+  "note": "CONSTRUCTED (P6) from Mastodon 4.x's delete_actor_serializer.rb: the account deletion, actor = object, an LD signature Ring ignores (Ring verifies the HTTP signature only).",
+  "body": {
+    "@context": [
+      "https://www.w3.org/ns/activitystreams",
+      "https://w3id.org/security/v1"
+    ],
+    "id": "https://remote.example/users/bob#delete",
+    "type": "Delete",
+    "actor": "https://remote.example/users/bob",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "object": "https://remote.example/users/bob",
+    "signature": {
+      "type": "RsaSignature2017",
+      "creator": "https://remote.example/users/bob#main-key",
+      "created": "2026-10-15T11:00:00Z",
+      "signatureValue": "AAAA"
+    }
+  }
+}

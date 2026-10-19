@@ -1,0 +1,51 @@
+{
+  "note": "CONSTRUCTED (P6): the software block of NodeInfo 2.0 as Akkoma 3.x and Misskey 2024.x serve it (the recorded Mastodon one is mastodon-nodeinfo-2.0.json). Usage numbers left out: Ring reads only software and metadata.ringProtocol.",
+  "akkoma": {
+    "version": "2.0",
+    "software": {
+      "name": "akkoma",
+      "version": "3.13.2"
+    },
+    "protocols": [
+      "activitypub"
+    ],
+    "services": {
+      "inbound": [],
+      "outbound": []
+    },
+    "openRegistrations": false,
+    "usage": {
+      "users": {}
+    },
+    "metadata": {
+      "nodeName": "remote.example",
+      "features": [
+        "pleroma_emoji_reactions"
+      ]
+    }
+  },
+  "misskey": {
+    "version": "2.0",
+    "software": {
+      "name": "misskey",
+      "version": "2024.11.0"
+    },
+    "protocols": [
+      "activitypub"
+    ],
+    "services": {
+      "inbound": [],
+      "outbound": [
+        "atom1.0",
+        "rss2.0"
+      ]
+    },
+    "openRegistrations": false,
+    "usage": {
+      "users": {}
+    },
+    "metadata": {
+      "nodeName": "remote.example"
+    }
+  }
+}

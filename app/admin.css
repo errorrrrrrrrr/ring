@@ -1,0 +1,32 @@
+/* ── /admin (spec 6.3, 13.1; P8): the tool register, nothing of the wall ──────
+ * Tokens only (tokens.css), sharp corners, hairlines, no shadow. One column
+ * that reads at phone width with a 16px gutter; rows wrap rather than scroll. */
+.admin { max-width: 880px; margin: 0 auto; padding: 18px 24px 64px; min-height: 100%; background: var(--canvas); }
+.admin-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.admin-title { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; min-width: 0; }
+.admin-title h1 { margin: 0; font-size: var(--fs-2xl); font-weight: 600; }
+.admin-tabs { margin-bottom: 16px; }
+.admin-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+.admin-report.is-closed { color: var(--muted); }
+.admin-report-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+.admin-age { margin-left: auto; }
+.admin-line { margin: 4px 0; overflow-wrap: anywhere; }
+.admin-comment { margin: 8px 0; padding: 6px 10px; border-left: 2px solid var(--border); background: var(--sunken); white-space: pre-wrap; overflow-wrap: anywhere; }
+.admin-objects { margin: 6px 0 10px; padding-left: 18px; }
+.admin-objects li { overflow-wrap: anywhere; margin: 2px 0; }
+.admin-actions { gap: 6px; }
+.admin-form { display: flex; align-items: flex-end; gap: 10px; flex-wrap: wrap; margin: 10px 0 12px; }
+.admin-form .field { min-width: 180px; }
+.admin-facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 6px 0 12px; font-size: var(--fs-sm); }
+.admin-facts dt { color: var(--muted); }
+.admin-facts dd { margin: 0; overflow-wrap: anywhere; }
+.admin-chip-bad { color: var(--bad); }
+.admin-member .who { flex: 1 1 260px; }
+@media (max-width: 650px) {
+  .admin { padding: 12px 16px 48px; }
+  .admin-form .field { min-width: 0; width: 100%; }
+  .admin-form .btn { width: 100%; }
+  .admin-facts { grid-template-columns: 1fr; gap: 2px; }
+  .admin-facts dd { margin-bottom: 8px; }
+  .list-row .verbs { margin-left: 0; flex-wrap: wrap; }
+}

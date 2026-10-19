@@ -1,0 +1,68 @@
+/* ── Design tokens (spec 13.1) ─────────────────────────────────────────────────
+ * The token ladder of Ring's tool chrome. Semantic tokens point at the
+ * primitive ramp; dark mode re-points the ramp once and everything follows.
+ * Dark mode follows the system preference.
+ * A raw hex in the chrome is a bug. Depth is the material ladder plus a
+ * hairline, never a shadow. The wall (.logwall, ring.css) is the documented
+ * exception: physical paper, not chrome.
+ */
+:root {
+  color-scheme: light dark;
+  /* Primitive: cool-neutral ramp (g0 canvas, g10 text) */
+  --g0: #ffffff; --g1: #fafbfc; --g2: #f1f2f4; --g3: #e7e9ec; --g4: #d7dadf;
+  --g5: #bbbfc6; --g6: #9a9ea6; --g7: #74767c; --g8: #4f5157; --g9: #303236; --g10: #16171a;
+  /* Primitive: accent and status */
+  --blue: #0000ff; --tint: #eaecff;
+  --ok: #1f7a3d; --warn: #9a6b00; --bad: #a81e0e;
+  --on-accent: #ffffff;
+  --scrim: rgba(0, 0, 0, .45);
+
+  /* Semantic: surfaces (the material ladder) */
+  --canvas: var(--g0);
+  --chrome: var(--g2);
+  --sunken: var(--g1);
+  --surface: var(--g0);
+  /* Semantic: ink */
+  --black: var(--g10);
+  --muted: var(--g7);
+  --faint: var(--g6);
+  /* Semantic: lines and states */
+  --border: var(--g4);
+  --divider: var(--g3);
+  --hover: var(--g2);
+  --pressed: var(--g3);
+  --selected: var(--tint);
+
+  /* Control heights: every field and button in a row shares one */
+  --ctl-h: 34px; --ctl-sm: 26px;
+
+  /* Type: system sans for the tool; mono for tabular data and code only */
+  --body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --mono: ui-monospace, 'SF Mono', 'Courier Prime', 'Courier New', monospace;
+  /* Type scale: rem, so the browser's text size reaches it */
+  --fs-2xs: .6875rem;
+  --fs-xs: .75rem;
+  --fs-sm: .8125rem;
+  --fs-md: .875rem;
+  --fs-lg: .9375rem;
+  --fs-xl: 1rem;
+  --fs-2xl: 1.125rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --g0: #1a1b1d; --g1: #1e2023; --g2: #212327; --g3: #26282c; --g4: #2c2f34;
+    --g5: #3a3d43; --g6: #80838a; --g7: #9a9da3; --g8: #b0b3b9; --g9: #c0c3c9; --g10: #c7c9ce;
+    --blue: #6e73ff; --tint: #1e1f33;
+    --ok: #3fa85f; --warn: #c79320; --bad: #e0604f;
+    --scrim: rgba(0, 0, 0, .62);
+    --chrome: #151619;
+    --sunken: #161719;
+    --surface: var(--g2);
+  }
+}
+
+@media (max-width: 650px) {
+  /* The phone's thumb floor: controls clear 44px, inputs do not trigger iOS zoom */
+  :root { --ctl-h: 44px; --ctl-sm: 36px; }
+}

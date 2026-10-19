@@ -1,0 +1,37 @@
+{
+  "name": "ring",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A small, self-hostable, federated webring for artists' posts.",
+  "license": "AGPL-3.0-or-later",
+  "main": "server.js",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "signup-release": "node scripts/signup-release.js",
+    "build": "vite build",
+    "typecheck": "tsc -p .",
+    "pretest": "npm run build",
+    "test": "node --test --test-timeout=60000 --test-force-exit 'test/*.test.js'",
+    "lint": "biome lint"
+  },
+  "dependencies": {
+    "bcryptjs": "3.0.3",
+    "express": "5.2.1",
+    "express-session": "1.19.0",
+    "multer": "2.4.0",
+    "nodemailer": "10.0.13",
+    "sharp": "0.35.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.14",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "typescript": "5.9.3",
+    "vite": "8.3.3"
+  }
+}

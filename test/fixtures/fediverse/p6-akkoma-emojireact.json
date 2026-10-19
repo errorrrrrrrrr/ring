@@ -1,0 +1,57 @@
+{
+  "note": "CONSTRUCTED (P6) from Akkoma 3.x's (Pleroma's) EmojiReact as lib/pleroma/web/activity_pub/builder.ex emits it: a unicode reaction, and a custom-emoji one whose Emoji tag carries an image URL Ring must never fetch.",
+  "unicode": {
+    "@context": [
+      "https://www.w3.org/ns/activitystreams",
+      "https://remote.example/schemas/litepub-0.1.jsonld",
+      {
+        "@language": "und"
+      }
+    ],
+    "id": "https://remote.example/activities/0f4c2a3e-1b7d-4e9f-a0b1-c2d3e4f5a6b7",
+    "type": "EmojiReact",
+    "actor": "https://remote.example/users/cat",
+    "object": "https://ring.example/users/ana/posts/RING_POST",
+    "content": "🌞",
+    "to": [
+      "https://ring.example/users/ana",
+      "https://remote.example/users/cat/followers"
+    ],
+    "cc": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "context": "https://ring.example/contexts/1",
+    "tag": []
+  },
+  "custom": {
+    "@context": [
+      "https://www.w3.org/ns/activitystreams",
+      "https://remote.example/schemas/litepub-0.1.jsonld",
+      {
+        "@language": "und"
+      }
+    ],
+    "id": "https://remote.example/activities/1a2b3c4d-1b7d-4e9f-a0b1-c2d3e4f5a6b7",
+    "type": "EmojiReact",
+    "actor": "https://remote.example/users/cat",
+    "object": "https://ring.example/users/ana/posts/RING_POST",
+    "content": ":blobcat:",
+    "to": [
+      "https://ring.example/users/ana"
+    ],
+    "cc": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "tag": [
+      {
+        "type": "Emoji",
+        "id": "https://remote.example/emoji/blobcat.png",
+        "name": ":blobcat:",
+        "icon": {
+          "type": "Image",
+          "url": "https://remote.example/emoji/blobcat.png"
+        }
+      }
+    ]
+  }
+}

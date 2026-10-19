@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "type": "module",
+  "description": "The composer's source (spec 13.1, 14). ESM, so node --test can import the pure modules with type stripping; Vite builds it into ../app-dist."
+}

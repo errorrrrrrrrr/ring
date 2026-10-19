@@ -1,0 +1,78 @@
+[
+  {
+    "to": [
+      "https://h/users/ana/followers"
+    ],
+    "activity": {
+      "@context": [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1",
+        {
+          "toot": "http://joinmastodon.org/ns#",
+          "featured": {
+            "@id": "toot:featured",
+            "@type": "@id"
+          },
+          "discoverable": "toot:discoverable",
+          "indexable": "toot:indexable",
+          "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+          "sensitive": "as:sensitive",
+          "schema": "http://schema.org#",
+          "PropertyValue": "schema:PropertyValue",
+          "value": "schema:value",
+          "litepub": "http://litepub.social/ns#",
+          "EmojiReact": "litepub:EmojiReact",
+          "misskey": "https://misskey-hub.net/ns#",
+          "_misskey_reaction": "misskey:_misskey_reaction",
+          "ring": "https://github.com/errorrrrrrrrr/ring/ns#data"
+        }
+      ],
+      "id": "https://h/users/ana/activities/<act1>",
+      "type": "Update",
+      "actor": "https://h/users/ana",
+      "to": [
+        "https://www.w3.org/ns/activitystreams#Public"
+      ],
+      "cc": [
+        "https://h/users/ana/followers"
+      ],
+      "object": {
+        "id": "https://h/users/ana/posts/<post1>",
+        "type": "Note",
+        "attributedTo": "https://h/users/ana",
+        "published": "<time1>",
+        "to": [
+          "https://www.w3.org/ns/activitystreams#Public"
+        ],
+        "cc": [
+          "https://h/users/ana/followers"
+        ],
+        "content": "<p>dry now</p><p><a href=\"https://ana.example/prints\" rel=\"nofollow noopener ugc\" target=\"_blank\">https://ana.example/prints</a></p><p>(´ ▽ ` )</p>",
+        "source": {
+          "content": "dry now",
+          "mediaType": "text/markdown"
+        },
+        "summary": "flash",
+        "sensitive": true,
+        "url": "https://h/@ana#<post1>",
+        "attachment": [
+          {
+            "type": "Image",
+            "mediaType": "image/webp",
+            "url": "https://h/api/images/<image1>/web",
+            "name": "three prints",
+            "width": 64,
+            "height": 48
+          }
+        ],
+        "ring": {
+          "v": 1,
+          "kind": "image",
+          "href": "https://ana.example/prints",
+          "kaomoji": "(´ ▽ ` )"
+        },
+        "updated": "<time2>"
+      }
+    }
+  }
+]

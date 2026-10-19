@@ -1,0 +1,112 @@
+[
+  {
+    "to": [
+      "https://h/rings/<ring1>"
+    ],
+    "activity": {
+      "@context": [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1",
+        {
+          "toot": "http://joinmastodon.org/ns#",
+          "featured": {
+            "@id": "toot:featured",
+            "@type": "@id"
+          },
+          "discoverable": "toot:discoverable",
+          "indexable": "toot:indexable",
+          "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+          "sensitive": "as:sensitive",
+          "schema": "http://schema.org#",
+          "PropertyValue": "schema:PropertyValue",
+          "value": "schema:value",
+          "litepub": "http://litepub.social/ns#",
+          "EmojiReact": "litepub:EmojiReact",
+          "misskey": "https://misskey-hub.net/ns#",
+          "_misskey_reaction": "misskey:_misskey_reaction",
+          "ring": "https://github.com/errorrrrrrrrr/ring/ns#data"
+        }
+      ],
+      "id": "https://h/users/bram/activities/<act1>",
+      "type": "Update",
+      "actor": "https://h/users/bram",
+      "object": {
+        "id": "https://h/rings/<ring1>",
+        "type": "Group",
+        "name": "Thursday"
+      },
+      "to": [
+        "https://h/rings/<ring1>"
+      ]
+    }
+  },
+  {
+    "to": [
+      "https://h/users/ana",
+      "https://h/users/bram"
+    ],
+    "activity": {
+      "@context": [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1",
+        {
+          "toot": "http://joinmastodon.org/ns#",
+          "featured": {
+            "@id": "toot:featured",
+            "@type": "@id"
+          },
+          "discoverable": "toot:discoverable",
+          "indexable": "toot:indexable",
+          "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+          "sensitive": "as:sensitive",
+          "schema": "http://schema.org#",
+          "PropertyValue": "schema:PropertyValue",
+          "value": "schema:value",
+          "litepub": "http://litepub.social/ns#",
+          "EmojiReact": "litepub:EmojiReact",
+          "misskey": "https://misskey-hub.net/ns#",
+          "_misskey_reaction": "misskey:_misskey_reaction",
+          "ring": "https://github.com/errorrrrrrrrr/ring/ns#data"
+        }
+      ],
+      "id": "https://h/rings/<ring1>/activities/<act2>",
+      "type": "Update",
+      "actor": "https://h/rings/<ring1>",
+      "to": [
+        "https://h/users/ana",
+        "https://h/users/bram"
+      ],
+      "object": {
+        "id": "https://h/rings/<ring1>",
+        "type": "Group",
+        "name": "Thursday",
+        "attributedTo": "https://h/users/ana",
+        "inbox": "https://h/rings/<ring1>/inbox",
+        "outbox": "https://h/rings/<ring1>/outbox",
+        "followers": "https://h/rings/<ring1>/members",
+        "manuallyApprovesFollowers": true,
+        "ring": {
+          "v": 1,
+          "rev": 6,
+          "capacity": 6,
+          "hosts": [
+            "h"
+          ],
+          "members": [
+            {
+              "actor": "https://h/users/ana",
+              "joined_at": "<time1>"
+            },
+            {
+              "actor": "https://h/users/bram",
+              "joined_at": "<time1>"
+            }
+          ],
+          "requests": [],
+          "join_url": "https://h/rings/join/<code1>",
+          "join_expires": "<time2>"
+        }
+      }
+    }
+  }
+]

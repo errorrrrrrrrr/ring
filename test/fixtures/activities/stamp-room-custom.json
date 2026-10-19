@@ -1,0 +1,101 @@
+[
+  {
+    "to": [
+      "https://h/rings/<ring1>"
+    ],
+    "activity": {
+      "@context": [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1",
+        {
+          "toot": "http://joinmastodon.org/ns#",
+          "featured": {
+            "@id": "toot:featured",
+            "@type": "@id"
+          },
+          "discoverable": "toot:discoverable",
+          "indexable": "toot:indexable",
+          "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+          "sensitive": "as:sensitive",
+          "schema": "http://schema.org#",
+          "PropertyValue": "schema:PropertyValue",
+          "value": "schema:value",
+          "litepub": "http://litepub.social/ns#",
+          "EmojiReact": "litepub:EmojiReact",
+          "misskey": "https://misskey-hub.net/ns#",
+          "_misskey_reaction": "misskey:_misskey_reaction",
+          "ring": "https://github.com/errorrrrrrrrr/ring/ns#data"
+        }
+      ],
+      "id": "https://h/users/bram/stamps/<stamp1>",
+      "type": "Like",
+      "actor": "https://h/users/bram",
+      "object": "https://h/users/ana/posts/<post1>",
+      "content": "🦑 ink",
+      "to": [
+        "https://h/rings/<ring1>"
+      ],
+      "ring": {
+        "v": 1,
+        "face": "🦑 ink",
+        "custom": true
+      },
+      "audience": "https://h/rings/<ring1>"
+    }
+  },
+  {
+    "to": [
+      "https://h/users/ana",
+      "https://h/users/bram"
+    ],
+    "activity": {
+      "@context": [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1",
+        {
+          "toot": "http://joinmastodon.org/ns#",
+          "featured": {
+            "@id": "toot:featured",
+            "@type": "@id"
+          },
+          "discoverable": "toot:discoverable",
+          "indexable": "toot:indexable",
+          "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+          "sensitive": "as:sensitive",
+          "schema": "http://schema.org#",
+          "PropertyValue": "schema:PropertyValue",
+          "value": "schema:value",
+          "litepub": "http://litepub.social/ns#",
+          "EmojiReact": "litepub:EmojiReact",
+          "misskey": "https://misskey-hub.net/ns#",
+          "_misskey_reaction": "misskey:_misskey_reaction",
+          "ring": "https://github.com/errorrrrrrrrr/ring/ns#data"
+        }
+      ],
+      "id": "https://h/rings/<ring1>/activities/<act1>",
+      "type": "Announce",
+      "actor": "https://h/rings/<ring1>",
+      "object": {
+        "id": "https://h/users/bram/stamps/<stamp1>",
+        "type": "Like",
+        "actor": "https://h/users/bram",
+        "object": "https://h/users/ana/posts/<post1>",
+        "content": "🦑 ink",
+        "to": [
+          "https://h/rings/<ring1>"
+        ],
+        "ring": {
+          "v": 1,
+          "face": "🦑 ink",
+          "custom": true
+        },
+        "audience": "https://h/rings/<ring1>"
+      },
+      "to": [
+        "https://h/users/ana",
+        "https://h/users/bram"
+      ],
+      "audience": "https://h/rings/<ring1>"
+    }
+  }
+]

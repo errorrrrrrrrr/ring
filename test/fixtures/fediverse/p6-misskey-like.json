@@ -1,0 +1,20 @@
+{
+  "note": "CONSTRUCTED (P6) from Misskey 2024.x's renderer (packages/backend/src/core/activitypub/ApRendererService.ts renderLike): a Like carrying the reaction in content and _misskey_reaction.",
+  "body": {
+    "@context": [
+      "https://www.w3.org/ns/activitystreams",
+      "https://w3id.org/security/v1",
+      {
+        "misskey": "https://misskey-hub.net/ns#",
+        "_misskey_reaction": "misskey:_misskey_reaction"
+      }
+    ],
+    "type": "Like",
+    "id": "https://remote.example/likes/9xk2a1b2c3",
+    "actor": "https://remote.example/users/mio",
+    "object": "https://ring.example/users/ana/posts/RING_POST",
+    "content": "✨",
+    "_misskey_reaction": "✨",
+    "tag": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "note": "The shape Mastodon 4.x sends for a Follow (app/serializers/activitypub/follow_serializer.rb), with the headers it signs. Hosts are placeholders the tests replace: https://mastodon.example is the fake Mastodon, https://ring.example the Ring server. Re-signed at test time with a fresh key and Date.",
+  "signed_headers": ["(request-target)", "host", "date", "digest", "content-type"],
+  "content_type": "application/activity+json",
+  "body": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mastodon.example/8f3a1c2e-5b7d-4e9f-a0b1-c2d3e4f5a6b7",
+    "type": "Follow",
+    "actor": "https://mastodon.example/users/bob",
+    "object": "https://ring.example/users/ana"
+  }
+}

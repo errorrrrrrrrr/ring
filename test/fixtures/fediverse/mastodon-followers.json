@@ -1,0 +1,7 @@
+{
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mas.to/users/mastodon/followers",
+    "type": "OrderedCollection",
+    "totalItems": 26,
+    "first": "https://mas.to/users/mastodon/followers?page=1"
+}

@@ -1,0 +1,22 @@
+{
+  "note": "CONSTRUCTED (P6) from Mastodon 4.x's like_serializer.rb and undo_like_serializer.rb: a favourite (no content) and its Undo. Placeholders as above.",
+  "like": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://remote.example/users/bob#likes/4242",
+    "type": "Like",
+    "actor": "https://remote.example/users/bob",
+    "object": "https://ring.example/users/ana/posts/RING_POST"
+  },
+  "undo": {
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://remote.example/users/bob#likes/4242/undo",
+    "type": "Undo",
+    "actor": "https://remote.example/users/bob",
+    "object": {
+      "id": "https://remote.example/users/bob#likes/4242",
+      "type": "Like",
+      "actor": "https://remote.example/users/bob",
+      "object": "https://ring.example/users/ana/posts/RING_POST"
+    }
+  }
+}

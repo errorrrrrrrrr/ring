@@ -1,0 +1,8 @@
+{
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://mas.to/users/mastodon/outbox",
+    "type": "OrderedCollection",
+    "totalItems": 0,
+    "first": "https://mas.to/users/mastodon/outbox?page=true",
+    "last": "https://mas.to/users/mastodon/outbox?min_id=0&page=true"
+}

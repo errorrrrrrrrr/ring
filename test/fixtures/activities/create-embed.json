@@ -1,0 +1,68 @@
+[
+  {
+    "to": [
+      "https://h/users/ana/followers"
+    ],
+    "activity": {
+      "@context": [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1",
+        {
+          "toot": "http://joinmastodon.org/ns#",
+          "featured": {
+            "@id": "toot:featured",
+            "@type": "@id"
+          },
+          "discoverable": "toot:discoverable",
+          "indexable": "toot:indexable",
+          "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+          "sensitive": "as:sensitive",
+          "schema": "http://schema.org#",
+          "PropertyValue": "schema:PropertyValue",
+          "value": "schema:value",
+          "litepub": "http://litepub.social/ns#",
+          "EmojiReact": "litepub:EmojiReact",
+          "misskey": "https://misskey-hub.net/ns#",
+          "_misskey_reaction": "misskey:_misskey_reaction",
+          "ring": "https://github.com/errorrrrrrrrr/ring/ns#data"
+        }
+      ],
+      "id": "https://h/users/ana/posts/<post1>/activity",
+      "type": "Create",
+      "actor": "https://h/users/ana",
+      "published": "<time1>",
+      "to": [
+        "https://www.w3.org/ns/activitystreams#Public"
+      ],
+      "cc": [
+        "https://h/users/ana/followers"
+      ],
+      "object": {
+        "id": "https://h/users/ana/posts/<post1>",
+        "type": "Note",
+        "attributedTo": "https://h/users/ana",
+        "published": "<time1>",
+        "to": [
+          "https://www.w3.org/ns/activitystreams#Public"
+        ],
+        "cc": [
+          "https://h/users/ana/followers"
+        ],
+        "content": "<p><a href=\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\" rel=\"nofollow noopener ugc\" target=\"_blank\">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a></p>",
+        "source": {
+          "content": "",
+          "mediaType": "text/markdown"
+        },
+        "summary": null,
+        "sensitive": false,
+        "url": "https://h/@ana#<post1>",
+        "attachment": [],
+        "ring": {
+          "v": 1,
+          "kind": "embed",
+          "embed": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        }
+      }
+    }
+  }
+]

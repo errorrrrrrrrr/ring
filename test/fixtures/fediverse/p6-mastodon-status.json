@@ -1,0 +1,71 @@
+{
+  "note": "CONSTRUCTED (P6) from Mastodon 4.x's serializers: a public status with a content warning and an image attachment (Mastodon sends images as Document with mediaType), as it reaches a follower's shared inbox. Placeholders: https://remote.example (the fake), MEDIA_URL (an image the fake serves).",
+  "body": {
+    "@context": [
+      "https://www.w3.org/ns/activitystreams",
+      {
+        "ostatus": "http://ostatus.org#",
+        "atomUri": "ostatus:atomUri",
+        "inReplyToAtomUri": "ostatus:inReplyToAtomUri",
+        "conversation": "ostatus:conversation",
+        "sensitive": "as:sensitive",
+        "toot": "http://joinmastodon.org/ns#",
+        "votersCount": "toot:votersCount",
+        "blurhash": "toot:blurhash",
+        "focalPoint": {
+          "@container": "@list",
+          "@id": "toot:focalPoint"
+        }
+      }
+    ],
+    "id": "https://remote.example/users/bob/statuses/113290000000000002/activity",
+    "type": "Create",
+    "actor": "https://remote.example/users/bob",
+    "published": "2026-10-15T10:00:00Z",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "cc": [
+      "https://remote.example/users/bob/followers"
+    ],
+    "object": {
+      "id": "https://remote.example/users/bob/statuses/113290000000000002",
+      "type": "Note",
+      "summary": "studio mess",
+      "inReplyTo": null,
+      "published": "2026-10-15T10:00:00Z",
+      "url": "https://remote.example/@bob/113290000000000002",
+      "attributedTo": "https://remote.example/users/bob",
+      "to": [
+        "https://www.w3.org/ns/activitystreams#Public"
+      ],
+      "cc": [
+        "https://remote.example/users/bob/followers"
+      ],
+      "sensitive": true,
+      "content": "<p>new etching plates <a href=\"https://remote.example/tags/print\" class=\"mention hashtag\" rel=\"tag\">#<span>print</span></a></p>",
+      "attachment": [
+        {
+          "type": "Document",
+          "mediaType": "image/png",
+          "url": "MEDIA_URL",
+          "name": "two copper plates on a table",
+          "blurhash": "UBL_:rOpGG-oBUNG,qRj2so|=eE1w^n4S5NH",
+          "focalPoint": [
+            0.0,
+            0.0
+          ],
+          "width": 64,
+          "height": 48
+        }
+      ],
+      "tag": [
+        {
+          "type": "Hashtag",
+          "href": "https://remote.example/tags/print",
+          "name": "#print"
+        }
+      ]
+    }
+  }
+}

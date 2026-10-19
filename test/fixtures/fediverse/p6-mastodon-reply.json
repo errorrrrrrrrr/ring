@@ -1,0 +1,75 @@
+{
+  "note": "CONSTRUCTED (P6) from Mastodon 4.x's serializers (app/serializers/activitypub/note_serializer.rb, activity_serializer.rb), not captured from a server: a public reply to a Ring post, with Mastodon's mention h-card and its invisible/ellipsis link spans. Hosts are placeholders the tests replace: https://remote.example is the fake, https://ring.example the Ring server, RING_POST the post id.",
+  "body": {
+    "@context": [
+      "https://www.w3.org/ns/activitystreams",
+      {
+        "ostatus": "http://ostatus.org#",
+        "atomUri": "ostatus:atomUri",
+        "inReplyToAtomUri": "ostatus:inReplyToAtomUri",
+        "conversation": "ostatus:conversation",
+        "sensitive": "as:sensitive",
+        "toot": "http://joinmastodon.org/ns#",
+        "votersCount": "toot:votersCount",
+        "blurhash": "toot:blurhash",
+        "focalPoint": {
+          "@container": "@list",
+          "@id": "toot:focalPoint"
+        }
+      }
+    ],
+    "id": "https://remote.example/users/bob/statuses/113290000000000001/activity",
+    "type": "Create",
+    "actor": "https://remote.example/users/bob",
+    "published": "2026-10-15T09:00:00Z",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "cc": [
+      "https://remote.example/users/bob/followers",
+      "https://ring.example/users/ana"
+    ],
+    "object": {
+      "id": "https://remote.example/users/bob/statuses/113290000000000001",
+      "type": "Note",
+      "summary": null,
+      "inReplyTo": "https://ring.example/users/ana/posts/RING_POST",
+      "published": "2026-10-15T09:00:00Z",
+      "url": "https://remote.example/@bob/113290000000000001",
+      "attributedTo": "https://remote.example/users/bob",
+      "to": [
+        "https://www.w3.org/ns/activitystreams#Public"
+      ],
+      "cc": [
+        "https://remote.example/users/bob/followers",
+        "https://ring.example/users/ana"
+      ],
+      "sensitive": false,
+      "atomUri": "https://remote.example/users/bob/statuses/113290000000000001",
+      "inReplyToAtomUri": "https://ring.example/users/ana/posts/RING_POST",
+      "conversation": "tag:remote.example,2026-10-15:objectId=1:objectType=Conversation",
+      "content": "<p><span class=\"h-card\" translate=\"no\"><a href=\"https://ring.example/@ana\" class=\"u-url mention\">@<span>ana</span></a></span> lovely prints, the blue one especially <a href=\"https://example.org/a/very/long/path/to/a/page\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">example.org/a/very/long/pat</span><span class=\"invisible\">h/to/a/page</span></a></p>",
+      "contentMap": {
+        "en": "<p>…</p>"
+      },
+      "attachment": [],
+      "tag": [
+        {
+          "type": "Mention",
+          "href": "https://ring.example/users/ana",
+          "name": "@ana@ring.example"
+        }
+      ],
+      "replies": {
+        "id": "https://remote.example/users/bob/statuses/113290000000000001/replies",
+        "type": "Collection",
+        "first": {
+          "type": "CollectionPage",
+          "next": "https://remote.example/users/bob/statuses/113290000000000001/replies?only_other_accounts=true&page=true",
+          "partOf": "https://remote.example/users/bob/statuses/113290000000000001/replies",
+          "items": []
+        }
+      }
+    }
+  }
+}

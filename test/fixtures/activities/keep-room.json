@@ -1,0 +1,204 @@
+[
+  {
+    "to": [
+      "https://h/rings/<ring1>"
+    ],
+    "activity": {
+      "@context": [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1",
+        {
+          "toot": "http://joinmastodon.org/ns#",
+          "featured": {
+            "@id": "toot:featured",
+            "@type": "@id"
+          },
+          "discoverable": "toot:discoverable",
+          "indexable": "toot:indexable",
+          "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+          "sensitive": "as:sensitive",
+          "schema": "http://schema.org#",
+          "PropertyValue": "schema:PropertyValue",
+          "value": "schema:value",
+          "litepub": "http://litepub.social/ns#",
+          "EmojiReact": "litepub:EmojiReact",
+          "misskey": "https://misskey-hub.net/ns#",
+          "_misskey_reaction": "misskey:_misskey_reaction",
+          "ring": "https://github.com/errorrrrrrrrr/ring/ns#data"
+        }
+      ],
+      "id": "https://h/users/ana/activities/<act1>",
+      "type": "Update",
+      "actor": "https://h/users/ana",
+      "to": [
+        "https://h/rings/<ring1>"
+      ],
+      "cc": [],
+      "object": {
+        "id": "https://h/users/ana/posts/<post1>",
+        "type": "Note",
+        "attributedTo": "https://h/users/ana",
+        "published": "<time1>",
+        "to": [
+          "https://www.w3.org/ns/activitystreams#Public"
+        ],
+        "cc": [
+          "https://h/users/ana/followers"
+        ],
+        "content": "<p>in the room</p>",
+        "source": {
+          "content": "in the room",
+          "mediaType": "text/markdown"
+        },
+        "summary": null,
+        "sensitive": false,
+        "url": "https://h/@ana#<post1>",
+        "attachment": [],
+        "ring": {
+          "v": 1,
+          "kind": "note"
+        },
+        "updated": "<time1>"
+      }
+    }
+  },
+  {
+    "to": [
+      "https://h/users/ana",
+      "https://h/users/bram"
+    ],
+    "activity": {
+      "@context": [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1",
+        {
+          "toot": "http://joinmastodon.org/ns#",
+          "featured": {
+            "@id": "toot:featured",
+            "@type": "@id"
+          },
+          "discoverable": "toot:discoverable",
+          "indexable": "toot:indexable",
+          "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+          "sensitive": "as:sensitive",
+          "schema": "http://schema.org#",
+          "PropertyValue": "schema:PropertyValue",
+          "value": "schema:value",
+          "litepub": "http://litepub.social/ns#",
+          "EmojiReact": "litepub:EmojiReact",
+          "misskey": "https://misskey-hub.net/ns#",
+          "_misskey_reaction": "misskey:_misskey_reaction",
+          "ring": "https://github.com/errorrrrrrrrr/ring/ns#data"
+        }
+      ],
+      "id": "https://h/rings/<ring1>/activities/<act2>",
+      "type": "Announce",
+      "actor": "https://h/rings/<ring1>",
+      "object": {
+        "id": "https://h/users/ana/activities/<act1>",
+        "type": "Update",
+        "actor": "https://h/users/ana",
+        "to": [
+          "https://h/rings/<ring1>"
+        ],
+        "cc": [],
+        "object": {
+          "id": "https://h/users/ana/posts/<post1>",
+          "type": "Note",
+          "attributedTo": "https://h/users/ana",
+          "published": "<time1>",
+          "to": [
+            "https://www.w3.org/ns/activitystreams#Public"
+          ],
+          "cc": [
+            "https://h/users/ana/followers"
+          ],
+          "content": "<p>in the room</p>",
+          "source": {
+            "content": "in the room",
+            "mediaType": "text/markdown"
+          },
+          "summary": null,
+          "sensitive": false,
+          "url": "https://h/@ana#<post1>",
+          "attachment": [],
+          "ring": {
+            "v": 1,
+            "kind": "note"
+          },
+          "updated": "<time1>"
+        }
+      },
+      "to": [
+        "https://h/users/ana",
+        "https://h/users/bram"
+      ],
+      "audience": "https://h/rings/<ring1>"
+    }
+  },
+  {
+    "to": [
+      "https://h/users/ana/followers"
+    ],
+    "activity": {
+      "@context": [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1",
+        {
+          "toot": "http://joinmastodon.org/ns#",
+          "featured": {
+            "@id": "toot:featured",
+            "@type": "@id"
+          },
+          "discoverable": "toot:discoverable",
+          "indexable": "toot:indexable",
+          "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+          "sensitive": "as:sensitive",
+          "schema": "http://schema.org#",
+          "PropertyValue": "schema:PropertyValue",
+          "value": "schema:value",
+          "litepub": "http://litepub.social/ns#",
+          "EmojiReact": "litepub:EmojiReact",
+          "misskey": "https://misskey-hub.net/ns#",
+          "_misskey_reaction": "misskey:_misskey_reaction",
+          "ring": "https://github.com/errorrrrrrrrr/ring/ns#data"
+        }
+      ],
+      "id": "https://h/users/ana/posts/<post1>/activity",
+      "type": "Create",
+      "actor": "https://h/users/ana",
+      "published": "<time1>",
+      "to": [
+        "https://www.w3.org/ns/activitystreams#Public"
+      ],
+      "cc": [
+        "https://h/users/ana/followers"
+      ],
+      "object": {
+        "id": "https://h/users/ana/posts/<post1>",
+        "type": "Note",
+        "attributedTo": "https://h/users/ana",
+        "published": "<time1>",
+        "to": [
+          "https://www.w3.org/ns/activitystreams#Public"
+        ],
+        "cc": [
+          "https://h/users/ana/followers"
+        ],
+        "content": "<p>in the room</p>",
+        "source": {
+          "content": "in the room",
+          "mediaType": "text/markdown"
+        },
+        "summary": null,
+        "sensitive": false,
+        "url": "https://h/@ana#<post1>",
+        "attachment": [],
+        "ring": {
+          "v": 1,
+          "kind": "note"
+        }
+      }
+    }
+  }
+]

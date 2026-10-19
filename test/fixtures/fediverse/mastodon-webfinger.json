@@ -1,0 +1,31 @@
+{
+    "subject": "acct:mastodon@mas.to",
+    "aliases": [
+        "https://mas.to/@mastodon",
+        "https://mas.to/users/mastodon"
+    ],
+    "links": [
+        {
+            "rel": "http://webfinger.net/rel/profile-page",
+            "type": "text/html",
+            "href": "https://mas.to/@mastodon"
+        },
+        {
+            "rel": "self",
+            "type": "application/activity+json",
+            "href": "https://mas.to/users/mastodon"
+        },
+        {
+            "rel": "http://ostatus.org/schema/1.0/subscribe",
+            "template": "https://mas.to/authorize_interaction?uri={uri}"
+        },
+        {
+            "rel": "https://w3id.org/fep/3b86/Create",
+            "template": "https://mas.to/share?text={content}"
+        },
+        {
+            "rel": "https://w3id.org/fep/3b86/Object",
+            "template": "https://mas.to/authorize_interaction?uri={object}"
+        }
+    ]
+}

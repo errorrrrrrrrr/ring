@@ -1,0 +1,70 @@
+[
+  {
+    "to": [
+      "https://h/users/ana"
+    ],
+    "activity": {
+      "@context": [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1",
+        {
+          "toot": "http://joinmastodon.org/ns#",
+          "featured": {
+            "@id": "toot:featured",
+            "@type": "@id"
+          },
+          "discoverable": "toot:discoverable",
+          "indexable": "toot:indexable",
+          "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+          "sensitive": "as:sensitive",
+          "schema": "http://schema.org#",
+          "PropertyValue": "schema:PropertyValue",
+          "value": "schema:value",
+          "litepub": "http://litepub.social/ns#",
+          "EmojiReact": "litepub:EmojiReact",
+          "misskey": "https://misskey-hub.net/ns#",
+          "_misskey_reaction": "misskey:_misskey_reaction",
+          "ring": "https://github.com/errorrrrrrrrr/ring/ns#data"
+        }
+      ],
+      "id": "https://h/users/bram/activities/<act1>",
+      "type": "Create",
+      "actor": "https://h/users/bram",
+      "published": "<time1>",
+      "to": [
+        "https://h/users/ana"
+      ],
+      "cc": [
+        "https://www.w3.org/ns/activitystreams#Public"
+      ],
+      "object": {
+        "id": "https://h/users/bram/comments/<comment1>",
+        "type": "Note",
+        "attributedTo": "https://h/users/bram",
+        "inReplyTo": "https://h/users/ana/posts/<post1>",
+        "published": "<time1>",
+        "to": [
+          "https://h/users/ana"
+        ],
+        "cc": [
+          "https://www.w3.org/ns/activitystreams#Public"
+        ],
+        "content": "<p>that blue &lt;b&gt;is&lt;/b&gt; worth it</p>",
+        "source": {
+          "content": "that blue <b>is</b> worth it",
+          "mediaType": "text/plain"
+        },
+        "tag": [
+          {
+            "type": "Mention",
+            "href": "https://h/users/ana",
+            "name": "@ana@h"
+          }
+        ],
+        "ring": {
+          "v": 1
+        }
+      }
+    }
+  }
+]

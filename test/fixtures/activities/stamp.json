@@ -1,0 +1,44 @@
+[
+  {
+    "to": [
+      "https://h/users/ana"
+    ],
+    "activity": {
+      "@context": [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1",
+        {
+          "toot": "http://joinmastodon.org/ns#",
+          "featured": {
+            "@id": "toot:featured",
+            "@type": "@id"
+          },
+          "discoverable": "toot:discoverable",
+          "indexable": "toot:indexable",
+          "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+          "sensitive": "as:sensitive",
+          "schema": "http://schema.org#",
+          "PropertyValue": "schema:PropertyValue",
+          "value": "schema:value",
+          "litepub": "http://litepub.social/ns#",
+          "EmojiReact": "litepub:EmojiReact",
+          "misskey": "https://misskey-hub.net/ns#",
+          "_misskey_reaction": "misskey:_misskey_reaction",
+          "ring": "https://github.com/errorrrrrrrrr/ring/ns#data"
+        }
+      ],
+      "id": "https://h/users/bram/stamps/<stamp1>",
+      "type": "Like",
+      "actor": "https://h/users/bram",
+      "object": "https://h/users/ana/posts/<post1>",
+      "content": "🌞",
+      "to": [
+        "https://h/users/ana"
+      ],
+      "ring": {
+        "v": 1,
+        "face": "🌞"
+      }
+    }
+  }
+]
